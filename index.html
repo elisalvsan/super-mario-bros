@@ -25,14 +25,9 @@
   </head>
   <body>
     <div class="back-video">
-      <video
-        class="video"
-        autoplay
-        loop
-        muted
-        src="src/assets/video/video-mario.mp4"
-        type="mp4"
-      ></video>
+      <video class="video" autoplay loop muted>
+        <source src="src/assets/video/video-mario.mp4" type="video/mp4" />
+      </video>
     </div>
 
     <header class="header">
@@ -45,8 +40,8 @@
       </a>
       <nav class="navbar">
         <ul class="menu">
-          <li>Home</li>
-          <li>Detalhes</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Detalhes</a></li>
         </ul>
       </nav>
     </header>
@@ -66,6 +61,21 @@
         <button class="buttom-trailer">Veja o trailer</button>
       </div>
       <img class="mario" src="src/assets/img/super-mario-chars.png" alt="" />
+
+      <div class="modal">
+        <div class="content-modal">
+          <span class="close-modal">X</span>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/cDNkh5WybZo"
+            title="Trailer oficial"
+            frameborder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </main>
   </body>
 </html>
